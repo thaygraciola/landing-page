@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page - Thayssa</title>
+    <style>
+        /* Reset e Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a4c93, #6a4c93);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        
+        .btn {
+            display: inline-block;
+            background-color: #6a4c93;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #20ad8f;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #2e2e2e;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #20ad8f;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #6a4c93;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #20ad8f;
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Projects */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        article {
+            flex: 1 1 300px;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        article {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        article h3 {
+            color: #9d50bb;
+        }
+        
+        /* Aside */
+        aside {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: #20ad8f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2e2e2e;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .projects {
+                flex-direction: column;
+            }
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Thayssa Graciola</h1>
+        <p>“Aprender é a única coisa que a mente nunca se cansa, nunca tem medo e nunca se arrepende."</p>
+         <a href="#projetos" class="btn">Veja meus projetos</a>
+        <img src="c:\Users\thays\OneDrive\Área de Trabalho\Programas\minha_foto_mapa.jpg"   class="avatar">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#Certificados / Cursos">Certificados / Cursos</a></li>
+            
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Thayssa, sou estudante de Análise e Desenvolvimento de Sistemas com uma paixão genuína por tecnologia, design e soluções criativas. Sempre fui curiosa e movida pelo desafio de aprender coisas novas — principalmente quando posso transformar esse conhecimento em algo prático e útil.
+Atualmente, estou focada em desenvolver minhas habilidades na área de Computação em Nuvem e construindo um portfólio que acompanhe minha evolução profissional (e pessoal).
+Quando não estou estudando ou codando, você provavelmente vai me encontrar assistindo séries — especialmente Friends. Afinal…
+“It’s like you’re always stuck in second gear…”
+Mas sigo tentando mudar de marcha, aprender e evoluir um pouquinho a cada dia!</p>   
+        </section>
+        
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python Básico </li>
+                <li>Inglês Intermediário</li>
+                <li>Word Avançado</li>
+                <li>Excel Avançado</li>
+                <li>Comunicação clara e empática</li>
+                <li>Organização e disciplina</li>
+            </ul>
+        </section>
+        
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <p>Aqui estão alguns projetos e estudos que me ajudaram a colocar em prática o que venho aprendendo:</p>
+            <div class="projects">
+               <article>
+                  <strong>Página de Apresentação Pessoal</strong>
+                  <P> Meu primeiro projeto prático: uma página simples onde me apresento, com links para redes sociais e uma breve descrição sobre mim.</p>
+                    <P> Tecnologias: HTML e CSS </P>
+                </article>
+
+                 <article>
+                    <strong>Lista de Tarefas</strong>
+                    <P> Aplicação web simples feita com HTML, CSS e JavaScript, onde é possível adicionar, marcar como concluída e remover tarefas. Foco em funcionalidades básicas de interação com o usuário.</p>
+                    <P> Tecnologias: HTML, CSS, JavaScript </P>
+                </article>
+
+                 <article>
+                    <strong>Calculadora Simples</strong>
+                    <p>Projeto de uma calculadora básica que realiza operações de soma, subtração, multiplicação e divisão entre dois números. Desenvolvido para praticar lógica e manipulação do DOM.</p>
+                    <p>Tecnologias: HTML, CSS, JavaScript</p>
+                </article>
+
+                <article>
+                    <strong>Clonagem de Página Inicial do Google</strong>
+                    <p>Desafio de replicar a página inicial do Google para praticar layout responsivo, HTML semântico e estilização com CSS. Exercício para aprimorar atenção aos detalhes e responsividade.</p>
+                    <p>Tecnologias: HTML e CSS</p>
+                </article>
+            </div>
+
+        </section>
+
+        <section id="Certificados / Cursos">
+            <h2>Certificados / Cursos</h2>
+            <ul>
+                <li>Curso de Lógica de Programação – Curso em Vídeo (Gustavo Guanabara)</li>
+                <li>Introdução à Computação em Nuvem – Google Cloud Skills Boost</li>
+                <li>Curso de HTML e CSS – Alura</li>
+            </ul>
+         </section>
+
+        <aside>
+             <div class="social-links">
+                <a href="https://www.linkedin.com/in/thayssa-graciola-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/thay_graciola?igsh=eGpqbXYyc3Uzc2w4" target="_blank">Instagram</a>
+                 <a href="https://mail.google.com/mail/?view=cm&to=thayssa.graciola35@gmail.com" target="_blank">E-mail</a>
+            </div>
+        </aside>
+    </main>
+    <footer>
+<p>&copy; 2025 Thayssa Graciola.</p>
+ <p>Todos os direitos reservados.</p>
+</footer>
